@@ -34,7 +34,7 @@ Welcome to my personal portfolio website! This project showcases my work, skills
 
 If you'd like to get in touch:
 
-- 📧 Email: priyankakanaki99@gmail.com
+- 📧 Email: priyankamlkanaki@gmail.com
 - 💼 [LinkedIn](https://linkedin.com/in/priyanka-kanaki)
 
 ---
