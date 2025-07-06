@@ -23,12 +23,12 @@ Welcome to my personal portfolio website! This project showcases my work, skills
 
 ## 📂 Folder Structure
 
-├── assets/
-│ └── images, icons, and other media
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+##### ├── assets/
+##### │ └── images, icons, and other media
+##### ├── index.html
+##### ├── style.css
+##### ├── script.js
+##### └── README.md
 
 ## 📬 Contact
 
