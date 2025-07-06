@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priyanka Kanaki | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assests/image.png">
+  <!-- <a href="https://www.flaticon.com/free-icons/backend" title="backend icons">Backend icons created by nangicon - Flaticon</a> -->
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Priyanka<span>Kanaki</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                 <i class="fas fa-moon"></i>
+                </button>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" >
+      
+        <div class="container">
+            <div class="hero-content">
+                
+                <div class="hero-text animate">
+                    <h1>Hi, I'm <span>Priyanka Kanaki</span></h1>
+                    <p>A passionate Software Engineering student with a focus on building innovative web applications and solving complex problems through code.</p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image animate delay-2">
+                  <dotlottie-player
+  src="https://lottie.host/55291e8c-5903-4143-89a8-d3954ab11382/rXyq1hKdEU.lottie"
+  background="transparent"
+  speed="1"
+
+  style="width: 700px; height: 800px"
+  loop
+  autoplay
+></dotlottie-player>
+                    <!-- <img src="https://picsum.photos/seed/softwareeng/500/500.jpg" alt="Alex Morgan"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Decorative Divider
+<div class="dashed-divider">
+  <span>✦</span>
+</div> -->
+
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="glowing-title">About Me</h2>
+            </div>
+            <div class="about-content">
+
+<!-- About Image Container -->
+<div class="about-img">
+  <img src="assests/priyanka.png" alt="About Me Image" />
+</div>
+
+                <div class="about-text animate delay-2">
+                    <h3>Software Engineering Student & Web Developer</h3>
+                    <p>I'm a dedicated software engineering student with a passion for creating elegant, efficient, and user-friendly applications. With a strong foundation in computer science principles and hands-on experience in various technologies, I'm constantly seeking new challenges to expand my skills and knowledge.</p>
+                    <p>My journey in software development began during my college years, and I've been hooked ever since. I enjoy working on projects that not only showcase my technical abilities but also make a meaningful impact.</p>
+                    <div class="skills">
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">React</span>
+                        <!-- <span class="skill">Node.js</span> -->
+                        <span class="skill">Python</span>
+                        <span class="skill">HTML5</span>
+                        <span class="skill">CSS3</span>
+                        <span class="skill">Git</span>
+                        <!-- <span class="skill">MongoDB</span> -->
+                        <span class="skill">SQL</span>
+                        <!-- <span class="skill">Docker</span>
+                        <span class="skill">AWS</span> -->
+                        <span class="skill">UI/UX Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="dashed-divider">
+  <span>✦</span>
+</div>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="stroke-heading">My Projects</h2>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="assests/Home Page.png" alt="E-commerce Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>Alumni Management System</h3>
+                        <p>Web app for connecting students and alumni with features like mentorship, job postings, and profiles.</p>
+                        <div class="project-tags">
+                             <span class="project-tag">Firebase</span>
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="assests/20250608_201256.jpg" class="project-link">Live Demo</a>
+                            <a href="https://github.com/priyanka-kanaki/alumni-management-portal" class="project-link github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="assests/healthmate.png" alt="Fitness Tracker App">
+                    </div>
+                    <div class="project-info">
+                        <h3>HealthMate App</h3>
+                        <p>A personalized wellness app that allows users to schedule, track progress, and earn badges.</p>
+                        <div class="project-tags">
+                             <span class="project-tag">Android</span>
+            <span class="project-tag">Firebase</span>
+            <span class="project-tag">Java</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="assests/healthmate.png" class="project-link">Live Demo</a>
+                            <a href="https://github.com/priyanka-kanaki/priyanka-kanaki" class="project-link github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="assests/home.jpg" alt="Task Management System">
+                    </div>
+                    <div class="project-info">
+                        <h3>COVID-19 Vaccine Management System</h3>
+                        <p>Java-based desktop application for managing user registration, appointment booking, and vaccine tracking.</p>
+                          <div class="project-tags">
+                            <span class="project-tag">Java</span>
+      <span class="project-tag">AWT</span>
+      <span class="project-tag">Swing</span>
+      <span class="project-tag">JDBC</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="assests/dip - project.jpg" class="project-link">Live Demo</a>
+                            <a href="https://github.com/priyanka-kanaki/vaccination-management-system" class="project-link github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card" data-category="other">
+                    <div class="project-image">
+                        <img src="assests/fraud prediction.png" alt="AI Chatbot">
+                    </div>
+                    <div class="project-info">
+                        <h3>Fraud Detection System</h3>
+                        <p>Machine Learning model that detects fraudulent transactions using Logistic Regression and SVM.</p>
+          <div class="project-tags">
+                            <span class="project-tag">Python</span>
+            <span class="project-tag">Machine Learning</span>
+            <span class="project-tag">Flask</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="assests/fraud prediction.png" class="project-link">Live Demo</a>
+                            <a href="https://github.com/priyanka-kanaki/Fraud-Detection-With-Html-and-Python" class="project-link github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="assests/dashboard.png" alt="Weather App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Beauty Blush</h3>
+                        <p>A responsive website designed for a beauty and wellness brand offering skincare and cosmetic products. Includes smooth navigation, product highlights, and contact features.</p>
+          <div class="project-tags">
+                           <span class="project-tag">HTML</span>
+      <span class="project-tag">CSS</span>
+      <span class="project-tag">PHP</span>
+      <span class="project-tag">xampp</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="assests/home.png" class="project-link">Live Demo</a>
+                            <a href="https://github.com/priyanka-kanaki/online-Beauty-Parlour" class="project-link github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="assests/Screenshot (142).png" alt="Portfolio Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive portfolio website showcasing my projects, skills, and professional experience.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="assests/Screenshot (142).png" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="dashed-divider">
+  <span>✦</span>
+</div>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="stroke-heading">Experience & Education</h2>
+            </div>
+            <div class="timeline">
+                <!-- Experience Item 1 -->
+                <div class="timeline-item animate">
+                    <div class="timeline-content">
+                        <div class="timeline-date">May 2022</div>
+                        <h3 class="timeline-title">Industrial Training – Java Developer</h3>
+                        <p class="timeline-text">Vikramaa Tech.</p>
+                        <p>Developed a COVID-19 Vaccine Management System using Java AWT, Swing, and JDBC under the guidance of Nikhil Sir.</p>
+                    </div>
+                </div>
+                
+                <!-- Experience Item 2 -->
+                <div class="timeline-item animate delay-1">
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 2024</div>
+                        <h3 class="timeline-title">Vocational Training – Machine Learning</h3>
+                        <p class="timeline-text">Watchstum Venture Pvt. Ltd.</p>
+                        <p>Completed a hands-on ML training project on Fraud Detection using Python and Flask.</p>
+                    </div>
+                </div>
+                
+                <!-- Education Item 1 -->
+                <div class="timeline-item animate delay-2">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - Present</div>
+                        <h3 class="timeline-title">Bachelor of Computer Science & Engineering</h3>
+                        <p class="timeline-text">SVERI’s College of Engineering, Pandharpur  
+        <br>CGPA: 8.7/10 (Till 7th Sem)</p>
+                        <p>Currently pursuing a degree in Software Engineering with a focus on web development and artificial intelligence. GPA: 9/0/10.0</p>
+                    </div>
+                </div>
+                
+                <!-- Education Item 2 -->
+                <div class="timeline-item animate delay-3">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2023</div>
+                        <h3 class="timeline-title">Computer Technology</h3>
+                        <p class="timeline-text">Government Polytechnic, Solapur</p>
+                        <p>Completed post graduate in Computer Science with a focus on programming fundamentals and software development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="dashed-divider">
+  <span>✦</span>
+</div>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="glowing-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info animate">
+                    <h3>Let's Talk About Your Project</h3>
+                    <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Solapur, Maharashtra, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:priyankamlkanaki@gmail.com">priyankamlkanaki@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+1234567890">(91) 456-7890</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/priyanka-kanaki/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/priyanka-kanaki" class="social-link"><i class="fab fa-github"></i></a>
+                        <!-- <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a> -->
+                    </div>
+                </div>
+                <div class="contact-form animate delay-2">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- <div class="dashed-divider">
+  <span>✦</span>
+</div> -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Priyanka Kanaki</h3>
+                    <p>A passionate software engineering student focused on creating innovative web applications and solving complex problems through code.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Skills</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to my newsletter to receive updates on my latest projects and articles.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Priyanka Kanaki. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="toast-message">Message sent successfully!</div>
+        <div class="toast-close">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+
+
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<!-- <script>
+  VanillaTilt.init(document.querySelector(".about-img"), {
+    max: 15,
+    speed: 400
+  });
+</script> -->
+</body>
+</html>
