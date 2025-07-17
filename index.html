@@ -56,9 +56,11 @@
                 
                 <div class="hero-text animate">
                     <h1>Hi, I'm <span>Priyanka Kanaki</span></h1>
-                    <p>A passionate Software Engineering student with a focus on building innovative web applications and solving complex problems through code.</p>
+                    <p>A passionate Software Engineering student with a focus on building innovative web applications and solving complex problems through code.<h2><span class="typed-text"></span></h2>
+                    </p>
+                     
                     <div class="hero-btns">
-                        <a href="#projects" class="btn">View My Work</a>
+                        <a href="#projects" class="btn btns">View My Work</a>
                         <a href="#contact" class="btn btn-outline">Contact Me</a>
                     </div>
                 </div>
@@ -110,20 +112,20 @@
       <p>
         Whether it's creating wellness apps, academic tools, or real-time systems, I aim to write clean code and deliver user-centric experiences.
       </p>
-      <div class="skills">
+      <!-- <div class="skills">
                         <span class="skill">JavaScript</span>
-                        <!-- <span class="skill">React</span>
-                        <span class="skill">Node.js</span> -->
+                        <span class="skill">React</span>
+                        <span class="skill">Node.js</span>
                         <span class="skill">Python</span>
                         <span class="skill">HTML5</span>
                         <span class="skill">CSS3</span>
                         <span class="skill">Git</span>
-                        <!-- <span class="skill">MongoDB</span> -->
+                        <span class="skill">MongoDB</span>
                         <span class="skill">SQL</span>
-                        <!-- <span class="skill">Docker</span>
-                        <span class="skill">AWS</span> -->
+                        <span class="skill">Docker</span>
+                        <span class="skill">AWS</span>
                         <span class="skill">UI/UX Design</span>
-                    </div>
+                    </div> -->
       <a href="assests/Priyanka-Kanaki-resume.pdf" class=" btn">Resume</a>
                 </div>
             </div>
@@ -133,6 +135,83 @@
   <span>✦</span>
 </div>
 
+<section id="skills" class="skills">
+    
+   <div class="section-title">
+                <h2 class="stroke-heading">Skills</h2>
+            </div>
+  <div class="tree-container">
+  <div class="tree">
+    <!-- Root Node -->
+    <div class="node">Skills</div>
+    <div class="line vertical from-root"></div>
+<div class="horizontal-line"></div>
+    <!-- Left and Right Branches -->
+    <div class="tree-split">
+      <!-- Left: Programming Languages -->
+      <div class="branch">
+        <div class="line vertical"></div>
+        <div class="node">Programming Languages</div>
+        <div class="line vertical"></div>
+        <div class="level">
+          <div class="node">HTML</div>
+          <div class="node">CSS</div>
+          <!-- <div class="node">JavaScript</div> -->
+          <div class="node">Python</div>
+          <div class="node">JAVA</div>
+          <!-- <div class="node">PHP</div> -->
+          <!-- <div class="node">JavaScript</div>
+          <div class="node">Python</div> -->
+        </div>
+      </div>
+
+      <!-- Right: Libraries & Tools -->
+      <div class="branch">
+        <div class="line vertical"></div>
+        <div class="node">Other Tools</div>
+        <div class="line vertical"></div>
+        <div class="level">
+         <div class="node">Git</div>
+           <!-- <div class="node">Figma</div>
+            <div class="node">Canva</div> -->
+          <div class="node">Firebase</div>
+          <div class="node">GitHub</div>
+          <div class="node">VS Code</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- <div class="skills-bars">
+  <div class="skill-bar">
+    <label>Python</label>
+    <div class="bar"><span data-width="60%"></span></div>
+  </div>
+
+  <div class="skill-bar">
+    <label>Java</label>
+    <div class="bar"><span data-width="70%"></span></div>
+  </div>
+
+  <div class="skill-bar">
+    <label>Firebase</label>
+    <div class="bar"><span data-width="70%"></span></div>
+  </div>
+
+  <div class="skill-bar">
+    <label>PHP</label>
+    <div class="bar"><span data-width="30%"></span></div>
+  </div>
+
+  <div class="skill-bar">
+    <label>Flask</label>
+    <div class="bar"><span style="width: 75%"></span></div>
+  </div>
+</div> -->
+</section>
+
+<div class="dashed-divider">
+  <span>✦</span>
+</div>
     <!-- Projects Section -->
     <section class="section projects" id="projects">
         <div class="container">
@@ -155,9 +234,12 @@
                         <h3>Alumni Management System</h3>
                         <p>Web app for connecting students and alumni with features like mentorship, job postings, and profiles.</p>
                         <div class="project-tags">
-                             <span class="project-tag">Firebase</span>
-            <span class="project-tag">HTML</span>
-            <span class="project-tag">JavaScript</span>
+                           <div class="tech-stack">
+                                    <span class="badge html">HTML</span>
+                                     <span class="badge css">CSS</span>
+                                     <span class="badge js">JavaScript</span>
+                                        <span class="badge firebase">Firebase</span>
+                            </div>
                         </div>
                         <div class="project-links">
                             <a href="https://priyanka-kanaki.github.io/alumni-management-portal/ResponsiveLayout.html" class="project-link">Live Demo</a>
@@ -174,10 +256,9 @@
                     <div class="project-info">
                         <h3>HealthMate App</h3>
                         <p>A personalized wellness app that allows users to schedule, track progress, and earn badges.</p>
-                        <div class="project-tags">
-                             <span class="project-tag">Android</span>
-            <span class="project-tag">Firebase</span>
-            <span class="project-tag">Java</span>
+                        <div class="tech-stack">
+                            <span class="badge html">Android</span>
+                            <span class="badge firebase">Firebase</span>
                         </div>
                         <div class="project-links">
                             <a href="assests/healthmate.png" class="project-link">Live Demo</a>
@@ -194,11 +275,12 @@
                     <div class="project-info">
                         <h3>COVID-19 Vaccine Management System</h3>
                         <p>Java-based desktop application for managing user registration, appointment booking, and vaccine tracking.</p>
-                          <div class="project-tags">
-                            <span class="project-tag">Java</span>
-      <span class="project-tag">AWT</span>
-      <span class="project-tag">Swing</span>
-      <span class="project-tag">JDBC</span>
+                          <div class="tech-stack">
+                            <span class="badge html">Java</span>
+                            <span class="badge css">JDBC</span>
+                            <span class="badge js">AWT</span>
+                            <span class="badge firebase">Spring</span>
+   
                         </div>
                         <div class="project-links">
                             <a href="assests/dip - project.jpg" class="project-link">Live Demo</a>
@@ -215,11 +297,11 @@
                     <div class="project-info">
                         <h3>Fraud Detection System</h3>
                         <p>Machine Learning model that detects fraudulent transactions using Logistic Regression and SVM.</p>
-          <div class="project-tags">
-                            <span class="project-tag">Python</span>
-            <span class="project-tag">Machine Learning</span>
-            <span class="project-tag">Flask</span>
-                        </div>
+          <div class="tech-stack">
+    <span class="badge html">Machine Learning</span>
+    <span class="badge css">Flask</span>
+    <span class="badge python">Python</span>
+  </div>
                         <div class="project-links">
                             <a href="assests/fraud prediction.png" class="project-link">Live Demo</a>
                             <a href="https://github.com/priyanka-kanaki/Fraud-Detection-With-Html-and-Python" class="project-link github">GitHub</a>
@@ -235,12 +317,13 @@
                     <div class="project-info">
                         <h3>Beauty Blush</h3>
                         <p>A responsive website designed for a beauty and wellness brand offering skincare and cosmetic products. Includes smooth navigation, product highlights, and contact features.</p>
-          <div class="project-tags">
-                           <span class="project-tag">HTML</span>
-      <span class="project-tag">CSS</span>
-      <span class="project-tag">PHP</span>
-      <span class="project-tag">xampp</span>
-                        </div>
+          <div class="tech-stack">
+    <span class="badge html">HTML</span>
+    <span class="badge css">CSS</span>
+    <span class="badge js">PHP</span>
+    <span class="badge firebase">ElasticMail</span>
+    <span class="badge python">Xampp</span>
+  </div>
                         <div class="project-links">
                             <a href="assests/home.png" class="project-link">Live Demo</a>
                             <a href="https://github.com/priyanka-kanaki/online-Beauty-Parlour" class="project-link github">GitHub</a>
@@ -256,11 +339,12 @@
                     <div class="project-info">
                         <h3>Portfolio Website</h3>
                         <p>A responsive portfolio website showcasing my projects, skills, and professional experience.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">HTML5</span>
-                            <span class="project-tag">CSS3</span>
-                            <span class="project-tag">JavaScript</span>
-                        </div>
+                        <div class="tech-stack">
+    <span class="badge html">HTML</span>
+    <span class="badge css">CSS</span>
+    <span class="badge js">JavaScript</span>
+    <span class="badge firebase">Github</span>
+  </div>
                         <div class="project-links">
                             <a href="assests/Screenshot (142).png" class="project-link">Live Demo</a>
                             <a href="#" class="project-link github">GitHub</a>
@@ -269,6 +353,9 @@
                 </div>
             </div>
         </div>
+        <div class="show-more-container">
+    <button id="showMoreBtn" class="btn">Show More</button>
+  </div>
     </section>
 
     <div class="dashed-divider">
@@ -378,17 +465,18 @@
                 </div>
                 <div class="contact-form animate delay-2">
                     <form id="contactForm">
+                       <input type="hidden" name="_next" value="thankyou.html">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <input type="text" name="user_name" class="form-control" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <input type="email"name="user_email" class="form-control" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Subject" required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                            <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
                         </div>
                         <button type="submit" class="btn">Send Message</button>
                     </form>
@@ -472,5 +560,36 @@
     speed: 400
   });
 </script> -->
+
+<!-- Typed.js Script -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed('.typed-text', {
+    strings: ['Web Developer', 'AI Enthusiast', 'Tech Explorer'],
+    typeSpeed: 60,
+    backSpeed: 40,
+    backDelay: 1500,
+    loop: true
+  });
+</script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual key
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+      .then(() => {
+        alert("Message sent successfully!");
+        this.reset();
+      }, (err) => {
+        alert("Message failed to send.\n" + JSON.stringify(err));
+      });
+  });
+</script>
+
 </body>
 </html>

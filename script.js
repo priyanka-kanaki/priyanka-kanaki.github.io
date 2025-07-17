@@ -221,3 +221,54 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", checkInView);
   checkInView(); // in case already in view
 });
+
+//project card show more and lesss
+const cards = document.querySelectorAll('.project-card');
+  const showMoreBtn = document.getElementById('showMoreBtn');
+  const batchSize = 3;
+  let isExpanded = false;
+
+  function updateCards() {
+    if (isExpanded) {
+      // Show all
+      cards.forEach(card => card.style.display = 'block');
+      showMoreBtn.textContent = 'Show Less';
+    } else {
+      // Show only first 3
+      cards.forEach((card, index) => {
+        card.style.display = index < batchSize ? 'block' : 'none';
+      });
+      showMoreBtn.textContent = 'Show More';
+    }
+  }
+
+  // Initial state
+  updateCards();
+
+  // Toggle on button click
+  showMoreBtn.addEventListener('click', () => {
+    isExpanded = !isExpanded;
+    updateCards();
+  });
+
+  //Skills Animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const span = entry.target;
+        const finalWidth = span.getAttribute('data-width');
+        span.style.width = finalWidth;
+        // Stop observing once animated
+        observer.unobserve(span);
+      }
+    });
+  }, {
+    threshold: 0.3, // Animate when 30% visible
+  });
+
+  // Observe all bars
+  document.querySelectorAll('.bar span').forEach(span => {
+    observer.observe(span);
+  });
+
+  
