@@ -1442,6 +1442,89 @@ box-shadow: 0 6px 10px var(--text-color);
             color: var(--primary);
             padding-left: 10px;
         }
+
+        @media (max-width: 768px) {
+          .section-title {
+            /* text-align: center; */
+            margin-bottom: 60px;
+            margin-left:30px ;
+            border-radius: 10px;
+            margin-right: 30px;
+            backdrop-filter: blur(4px);
+
+        }
+  .hero {
+    height: auto;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .about-img {
+            flex: 1;
+            padding-right: 370px;
+            width: 200px;
+            max-height:500px;
+             padding-left: 50px;
+             border-radius: 50px;
+             /* box-shadow: 0px 10px #8fabfe; */
+        }
+        .about p{
+          color: #15396b;
+        }
+  .hero-text {
+    padding-right: 0;
+  }
+.horizontal-line{
+  display: none;
+}
+  .hero-text h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .hero .typed-text {
+    font-size: 1.2rem;
+  }
+
+  .hero-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 1.5rem;
+  }
+
+  .btn,
+  .btn-outline {
+    width: 50%;
+    /* text-align: left; */
+    /* margin-left: 10px; */
+    /* margin-right: 500px;
+    max-width: 200px; */
+  }
+
+  .hero-image dotlottie-player {
+    display: none;
+  }
+
+  .hero::before {
+    top: -60px;
+    left: -80px;
+    width: 250px;
+    height: 250px;
+    filter: blur(80px);
+  }
+}
+
         
         .overlay {
             position: fixed;
